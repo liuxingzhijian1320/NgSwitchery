@@ -10,6 +10,7 @@ An AngularJS Directive for [Switchery](http://abpetkov.github.io/switchery/).
 3. Include `ng-switchery.js` in your scripts
 4. Declare a dependency on the NgSwitchery module
 5. Add the `ui-switch` attribute to a checkbox.
+6. ng-model = 'a',a does not express any meaning,you can use any words to express.
 
 ##Example##
 
@@ -20,17 +21,17 @@ angular.module('myModule', ['NgSwitchery']);
 
 Insert checkbox html
 ```html
-<input type="checkbox" class="js-switch" ui-switch checked />
+<input type="checkbox" class="js-switch" ui-switch checked ng-model = 'a'/>
 ```
 
 Setting Options
 ```html
-<input type="checkbox" class="js-switch" ui-switch="{color: '#E43B11', secondaryColor: '#F89279'}" />
+<input type="checkbox" class="js-switch" ui-switch="{color: '#E43B11', secondaryColor: '#F89279'}" ng-model = 'a'/>
 ```
 
 Disable switch
 ```html
-<input type="checkbox" class="js-switch" ui-switch ng-disabled="isDisabled" />
+<input type="checkbox" class="js-switch" ui-switch ng-disabled="isDisabled" ng-model = 'a'/>
 ```
 
 
